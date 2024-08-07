@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.planet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>B.planet</h1>
+            <nav>
+                <button onclick="showPage('home')">Home</button>
+                <button onclick="showPage('login')">Login</button>
+                <button onclick="showPage('contact')">Contact Us</button>
+            </nav>
+        </header>
+
+        <section id="home" class="page visible">
+            <h2>Featured Product</h2>
+            <div class="products">
+                <div>Tree 1</div>
+                <div>Tray, Soil, Soil 2, Spade</div>
+                <div>Plants: Plant 1, Plant 2, Plant 3, Plant 4</div>
+                <div>Ducks: Duck 1, Duck 2, Duck 3, Duck 4</div>
+                <div>Pots: Pot 1, Pot 2, Pot 3, Pot 4</div>
+            </div>
+        </section>
+
+        <section id="login" class="page hidden">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account yet? <a href="#">Sign up for free</a></p>
+        </section>
+
+        <section id="contact" class="page hidden">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email-contact">Email:</label>
+                <input type="email" id="email-contact" name="email-contact" required><br><br>
+                <label for="message">What can we help you with?</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
